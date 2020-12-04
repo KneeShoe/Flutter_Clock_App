@@ -1,6 +1,9 @@
+import 'package:clock_mad_proj/stopWatch.dart';
 import 'package:flutter/material.dart';
+import 'dart:developer';
 
 import 'Clock.dart';
+import 'Timer.dart';
 
 class homePage extends StatefulWidget {
   @override
@@ -13,6 +16,8 @@ class _homePageState extends State<homePage> {
 
   List<Widget> tabPages = [
     clock(),
+    timer(),
+    stopWatch(),
   ];
 
   @override
@@ -69,6 +74,6 @@ class _homePageState extends State<homePage> {
 
   void onTabTapped(int index) {
     this._pageController.animateToPage(index,duration: const Duration(milliseconds: 500),curve: Curves.easeInOut);
+    log(index.toString());
   }
 }
-
