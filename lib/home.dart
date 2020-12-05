@@ -1,4 +1,5 @@
 import 'package:clock_mad_proj/stopWatch.dart';
+import 'package:clock_mad_proj/timer1.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer';
 
@@ -16,7 +17,7 @@ class _homePageState extends State<homePage> {
 
   List<Widget> tabPages = [
     clock(),
-    timer(),
+    CountDownTimer(),
     stopWatch(),
   ];
 
@@ -50,7 +51,7 @@ class _homePageState extends State<homePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.access_alarm),
-            title: Text("Alarm"),
+            title: Text("Timer"),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.watch),

@@ -73,7 +73,7 @@ class _stopWatchState extends State<stopWatch> {
                   },
                 ),
               ),
-              
+
               /// Lap time.
               Container(
                 height: 120,
@@ -103,7 +103,7 @@ class _stopWatchState extends State<stopWatch> {
                             Padding(
                               padding: const EdgeInsets.all(8),
                               child: Text(
-                                '${index + 1} ${data.displayTime}',
+                                '${data.displayTime}',
                                 style: const TextStyle(
                                     fontSize: 17,
                                     fontFamily: 'Helvetica',
